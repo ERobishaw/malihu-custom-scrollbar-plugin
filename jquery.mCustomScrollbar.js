@@ -537,7 +537,10 @@ and dependencies (minified).
 						
 						/* css flexbox fix, detect/set max-height */
 						mCustomScrollBox.css("max-height","none");
-						if(mCustomScrollBox.height()!==$this.height()){mCustomScrollBox.css("max-height",$this.height());}
+						if (mCustomScrollBox.height() !== $this.height()) {
+						    mCustomScrollBox.css("max-height",$this.height());
+						    mCustomScrollBox.css("height",$this.height());
+						}
 						
 						_expandContentHorizontally.call(this); /* expand content horizontally */
 						
